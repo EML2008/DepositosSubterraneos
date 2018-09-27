@@ -21,7 +21,7 @@ public class Deposito {
 		this.capacidadEnM3Actual -= this.superficie;
 	}
 
-	public boolean liquidoEnProfundadMinima(int nivelActual) {
+	public boolean liquidoEnProfundidadMinima(int nivelActual) {
 		return profundidad >= nivelActual;
 	}
 

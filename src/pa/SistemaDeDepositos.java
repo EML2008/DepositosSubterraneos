@@ -15,7 +15,7 @@ public class SistemaDeDepositos {
 		int nivelActualDelFluido = this.depositos.get(0).getProfundidad();
 		while (nivelActualDelFluido > 0 && cantidadDeCombustibleVertido() < this.volumenAIngresarEnM3) {
 			for (int i = 0; i < this.depositos.size(); i++) {
-				if (depositos.get(i).liquidoEnProfundadMinima(nivelActualDelFluido))
+				if (depositos.get(i).liquidoEnProfundidadMinima(nivelActualDelFluido))
 					depositos.get(i).agregarNivelDeLiquido();
 			}
 			nivelActualDelFluido--;
